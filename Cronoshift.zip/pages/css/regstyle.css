@@ -1,0 +1,218 @@
+* {
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Source for learning how to get rid of the scroll bar: https://www.youtube.com/watch?v=bDRLj82fk7Q */
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 100px;
+  z-index: 10;
+  background: #07452c;
+}
+header .logo {
+  height: 100px;
+  width: 150px;
+}
+header .navigation {
+  display: flex;
+  justify-content: right;
+  flex-wrap: wrap;
+  margin: 10px 0;
+}
+header .navigation li {
+  list-style: none;
+  margin: 0 10px;
+}
+header .navigation li a {
+  color: #fff;
+  text-shadow: 2px 2px 4px #000;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+header .navigation li a:hover {
+  background: #fff;
+  color: #07452c;
+  text-shadow: 2px 2px 4px #000;
+  border-radius: 0.2em;
+  padding: 0.4em 0.4em;
+  transition: background-color 0.5s ease;
+}
+body {
+  background-color: #07452c;
+}
+h2 {
+  text-shadow: 2px 2px 4px #000;
+  color: #fff;
+  font-weight: 500;
+  font-size: 37px;
+  text-align: center;
+}
+p {
+  text-shadow: 2px 2px 4px #000;
+  color: rgb(197, 197, 197);
+  font-weight: 300;
+  font-size: 19px;
+  text-align: center;
+}
+footer {
+  text-shadow: 2px 2px 4px #000;
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+}
+#home #hero {
+  background-image: url(../imgs/Jungle.jpg);
+  background-position-y: bottom;
+}
+#hero {
+  height: 50vh;
+  background-attachment: fixed;
+  background-position-x: center;
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#hero article {
+  height: 50vh;
+  padding: 2em;
+  color: #fff;
+  border-radius: 0.5rem 0.5rem;
+}
+#hero h1 {
+  font-size: 4rem;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  text-shadow: 2px 2px 4px #000;
+  text-align: center;
+  padding: 180px 60px 20px 100px;
+}
+footer {
+  position: relative;
+  background-color: #06291b;
+  margin-top: 2em;
+  padding: 1rem 0;
+}
+img {
+  max-width: 100%;
+  border: solid 3px #fff;
+  border-radius: 2rem 2rem;
+  padding: 0.5rem;
+}
+
+/* Wow I wonder what this is from */
+/* Credit: https://project1.cartwebapp.com/ */
+
+.length {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 2em;
+}
+.fulllength {
+  width: 100vw;
+}
+.quarterlength article {
+  width: 23%;
+}
+.thirdlength article {
+  width: 30%;
+}
+.twothirdslength article:first-child {
+  width: 64%;
+}
+.twothirdslength article:last-child {
+  width: 32%;
+}
+.halflength article {
+  width: 48%;
+}
+
+/* Reference from: https://www.w3schools.com/css/tryit.asp?filename=trycss_form_responsive */
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+label {
+  color: #fff;
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  background: #06291b;
+  padding: 12px 20px;
+  border-radius: 4px;
+  text-shadow: 2px 2px 4px #000;
+  font-family: "Poppins", sans-serif;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  resize: none;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: "Poppins", sans-serif;
+}
+
+input[type="subreg"] {
+  text-align: center;
+  background-color: #fff;
+  color: #07452c;
+  text-shadow: 2px 2px 4px #000;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type="subreg"]:hover {
+  background-color: #06291b;
+  text-shadow: 2px 2px 4px #000;
+  color: #fff;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #fff;
+  text-shadow: 2px 2px 4px #000;
+  padding: 18px;
+}
+
+.quartercolumn {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.threefourthscolumn {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
